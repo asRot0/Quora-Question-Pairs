@@ -39,7 +39,7 @@ The dataset is part of the **Quora Question Pairs** competition on Kaggle:
 The **TF-IDF (Term Frequency-Inverse Document Frequency)** score for a word **W** in a document **D** is computed as:
 
 $$
-\text{TF-IDF}(W, D) = \text{TF}(W, D) \times \text{IDF}(W)
+\Large \text{TF-IDF}(W, D) = \text{TF}(W, D) \times \text{IDF}(W)
 $$
 
 Where:  
