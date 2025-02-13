@@ -46,9 +46,9 @@ Where:
 - **TF (Term Frequency)** = How often word **W** appears in **D**.  
 - **IDF (Inverse Document Frequency)** = Measures how rare **W** is across **all documents**.  
 
-\[
+$$
 \text{IDF}(W) = \log \left( \frac{\text{Total Documents}}{\text{Number of Documents Containing } W} \right)
-\]
+$$
 
 📌 **If a word appears in almost every document, its IDF score is low** → **Less Important**  
 📌 **If a word is unique to a few documents, its IDF score is high** → **More Important**  
