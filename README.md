@@ -33,6 +33,49 @@ Each row in the dataset represents a pair of questions with the following column
 The dataset is part of the **Quora Question Pairs** competition on Kaggle:  
 [🔗 Kaggle Dataset](https://www.kaggle.com/competitions/quora-question-pairs/data)
 
+## 📌 Understanding TF-IDF in NLP
+
+## 🔍 TF-IDF Formula Breakdown  
+The **TF-IDF (Term Frequency-Inverse Document Frequency)** score for a word **W** in a document **D** is computed as:
+
+\[
+\text{TF-IDF}(W, D) = \text{TF}(W, D) \times \text{IDF}(W)
+\]
+
+Where:  
+- **TF (Term Frequency)** = How often word **W** appears in **D**.  
+- **IDF (Inverse Document Frequency)** = Measures how rare **W** is across **all documents**.  
+
+\[
+\text{IDF}(W) = \log \left( \frac{\text{Total Documents}}{\text{Number of Documents Containing } W} \right)
+\]
+
+📌 **If a word appears in almost every document, its IDF score is low** → **Less Important**  
+📌 **If a word is unique to a few documents, its IDF score is high** → **More Important**  
+
+---
+
+## 🚀 Example of TF-IDF Importance  
+### **Dataset: Three Documents**
+1️⃣ **"The movie was amazing and had great cinematography."**  
+2️⃣ **"The cinematography and plot twist were Oscar-worthy!"**  
+3️⃣ **"I love this movie, but the ending was bad."**  
+
+| **Word**           | **TF-IDF Score** | **Importance** |
+|------------------|-----------------|--------------|
+| **cinematography** | High            | ✅ Important (Rare, specific to some documents) |
+| **plot twist**     | High            | ✅ Important (Key phrase in only one document) |
+| **movie**          | Low             | ❌ Less Important (Appears in all documents) |
+| **the, was, and**  | Very Low        | ❌ Stopwords, common in all text |
+
+---
+
+## 📈 Why Use TF-IDF?  
+🚀 **TF-IDF improves text representation** by **reducing the impact of common words** while **giving importance to unique words**.  
+💡 **This is crucial in NLP tasks** like **text classification, document similarity, and search engines**.  
+
+---
+
 ## 🛠️ Use Cases  
 - **Question Deduplication**: Helps in reducing redundant questions in Q&A platforms.  
 - **Semantic Text Similarity**: Improves chatbot and search engine performance.  
